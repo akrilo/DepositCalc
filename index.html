@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <link href="assets/dist/air-datepicker.css" rel="stylesheet" type="text/css">
+    <script src="assets/dist/air-datepicker.js"></script>
+    <script src="https://kit.fontawesome.com/b698d5043b.js" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-light"></div>
+        <h1>Deposit Calculator</h1>
+    </header>
+    <form method="POST" class="container">
+        <h2>Депозитный калькулятор</h2>
+        <p>Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по опредленному тарифу.</p>
+        <div class="grid ">
+            <div class="col-grid">
+                <label class="label">
+                    Дата открытия
+                    <input type="text" class="cell" id="date" autocomplete="off" name="date">
+                </label>
+                <label class="label">
+                    Срок вклада
+                    <div class="lim">
+                        <input type="number" class="cell" id="limit" autocomplete="off" name="limit">
+                        <section>
+                            <select id="select">
+                                <option value="month">Месяц</option>
+                                <option value="year">Год</option>
+                            </select>
+                        </section>
+                    </div>   
+                </label>
+            </div>
+            <div class="col-grid ">
+                <label class="label">
+                    Сумма вклада
+                    <input type="number" class="cell" id="sum" autocomplete="off" name="sum">
+                </label>
+                <label class="label">
+                    Процентная ставка, % годовых
+                    <input type="number" class="cell" id="percent" autocomplete="off" name="percent">
+                </label>
+
+            </div>
+            <div class="col-grid">
+                <label class="check">Ежемесячное пополнение вклада
+                    <input type="checkbox" id="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label style="display: none;" class="label" id="labelHide">
+                    Сумма пополнения вклада
+                    <input type="number" class="cell" id="sumAdd" autocomplete="off" name="sumAdd">
+                </label>
+            </div>
+            <input type="submit" class="btn" value="Рассчитать">
+        </div>
+
+
+
+    </form>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

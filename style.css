@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    position: absolute;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    background: #1F2229;
+}
+
+h1 {
+    position: absolute;
+    width: 115px;
+    height: 16px;
+    left: 500px;
+    top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+h2 {
+    width: 436px;
+    height: 42px;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1F2229;
+}
+
+p {
+    width: 750px;
+    height: 14px;
+    margin: auto;
+    padding: 40px 0px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1F2229;
+}
+
+.container {
+    width: 800px;
+    height: 700px;
+    margin: 44px auto;
+    background: #FAF6F6;
+}
+
+.btn {
+    width: 172px;
+    height: 52px;
+    margin: 10px 0px;
+    background: #33C4A0;
+    border: 1px solid #33C4A0;
+    box-sizing: border-box;
+}
+
+.logo-light {
+    position: absolute;
+    width: 87px;
+    height: 30px;
+    left: 400px;
+    top: 10px;
+    background: url(assets/logo-light.png);
+}
+
+.grid {
+    width: 800px;
+    margin: auto 114px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    width: 242px;
+    height: 52px;
+    float: center;
+    margin-top: 38px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+}
+
+.check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 48px;
+    margin-right: 70px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    float: left;
+    padding-top: 5px;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.check:hover input~.checkmark {
+    background-color: #FFFFFF;
+}
+
+.check input:checked~.checkmark {
+    background-color: #FFFFFF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 17px;
+    border: 1px solid #000000;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(30deg);
+}
+
+.col-grid {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+    margin-right: 82px;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.label .cell {
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    width: 72%;
+    background-color: black;
+    height: 1px;
+}
+
+#payment {
+    margin: 30px 130px;
+}
+
+#payment label {
+    margin: 10px 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    width: 300px;
+}
+
+.lim {
+    display: flex;
+    flex-direction: raw;
+    width: 242px;
+    height: 52px;
+}
+
+#limit {
+    float: left;
+    width: 179px;
+    height: 52px;
+}
+
+section {
+    margin-top: 10px;
+    margin-left: -1px;
+    width: 140px;
+    height: 52px;
+}
+
+select {
+    height: 52px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background: #fff;
+    outline: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+option {
+    text-align: left;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}
