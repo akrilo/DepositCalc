@@ -77,6 +77,7 @@ $(".container").submit(function(e) {
 
     if (!strip_tags($("#sumAdd").val()).trim()) {
         var sumAdd = 0;
+
     } else {
         var sumAdd = $('#sumAdd').val();
     }
@@ -108,16 +109,4 @@ $(".container").submit(function(e) {
 
     });
 
-
-
-    var form = $(this);
-
-    // $.ajax({
-    //     type: "POST",
-    //     url: 'calc.php',
-    //     data: form.serialize(),
-    //     success: function(data) {
-    //         alert(data);
-    //     }
-    // });
 });
